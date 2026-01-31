@@ -8,13 +8,9 @@ This repository demonstrates core Python concepts, game logic, user interaction,
 This repository contains 5 different Python projects, each focusing on a unique concept:
 
 🐍 Snake Game (Pygame)
-
 ✊ Snake–Water–Gun Game (CLI)
-
 ❓ Interactive Gaming Quiz (CLI)
-
 🔢 Number Guessing Game (CLI)
-
 🗺️ Choose Your Own Adventure Game (CLI)
 
 🐍 Project 1: Snake Game (Pygame)
