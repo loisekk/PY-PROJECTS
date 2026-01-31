@@ -1,4 +1,4 @@
-🎮 Python Mini Games Collection
+🎮  Python Mini Games Collection
 
 A collection of fun, interactive Python mini-projects ranging from classic games to creative CLI adventures.
 This repository demonstrates core Python concepts, game logic, user interaction, and basic game development using Pygame — perfect for beginners and portfolio showcase 🚀🐍
