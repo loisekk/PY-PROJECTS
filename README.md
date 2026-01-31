@@ -25,7 +25,6 @@ Random food generation
 
 Score display
 Game-over detection (wall & self collision)
-
 Replay and quit options
 
 🛠️ Tech Stack
