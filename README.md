@@ -1,25 +1,18 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=240&section=header&text=Python%20Mini%20Games&fontSize=52&fontColor=FFD700&fontAlignY=36&desc=A%20Collection%20of%20Interactive%20CLI%20and%20Pygame%20Experiences&descAlignY=56&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=220&section=header&text=Slot%20Machine&fontSize=52&fontColor=FFD700&fontAlignY=38&desc=Casino-Style%20Terminal%20Game%20in%20Python&descAlignY=58&descAlign=50" width="100%"/>
 
 <br/>
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![Pygame](https://img.shields.io/badge/Pygame-2.x-00B140?style=for-the-badge&logo=python&logoColor=white)](https://pygame.org)
-[![Projects](https://img.shields.io/badge/Projects-5-FF6B6B?style=for-the-badge)](.)
-[![Type](https://img.shields.io/badge/Type-Game%20Dev-blueviolet?style=for-the-badge)](.)
+[![Module](https://img.shields.io/badge/Module-random-gold?style=for-the-badge)](.)
+[![Type](https://img.shields.io/badge/Type-Terminal%20Game-blueviolet?style=for-the-badge)](.)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-00FF88?style=for-the-badge)](.)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)](.)
 
 <br/>
 
-```
-█▀▀ ▄▀█ █▀▄▀█ █▀▀   █▀▀ █▀█ █░░ █░░ █▀▀ █▀▀ ▀█▀ █ █▀█ █▄░█
-█▄█ █▀█ █░▀░█ ██▄   █▄▄ █▄█ █▄▄ █▄▄ ██▄ █▄▄ ░█░ █ █▄█ █░▀█
-```
-
-> *Five games. One repo. Infinite replayability.*
-> A showcase of Python game development spanning CLI adventures to real-time Pygame action.
+> *A fully functional casino-style Slot Machine built in pure Python — featuring multi-line betting, randomized symbol generation, dynamic payout logic, and bulletproof input validation. All in your terminal.*
 
 <br/>
 
@@ -29,212 +22,146 @@
 
 ## 📋 Table of Contents
 
-- [About the Collection](#-about-the-collection)
-- [Games at a Glance](#-games-at-a-glance)
-- [Project Breakdowns](#-project-breakdowns)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Game Flow](#-game-flow)
+- [Symbols & Payout Rules](#-symbols--payout-rules)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
 - [Project Structure](#-project-structure)
-- [Quick Start](#-quick-start)
-- [Skills Demonstrated](#-skills-demonstrated)
-- [Roadmap](#-roadmap)
+- [Implementation Highlights](#-implementation-highlights)
+- [Screenshots](#-screenshots)
+- [Future Enhancements](#-future-enhancements)
 - [Author](#-author)
 
 ---
 
-## 🌌 About the Collection
+## 🎯 Overview
 
-**Python Mini Games Collection** is a curated set of five interactive Python projects — from terminal-based logic games to a real-time graphical experience with Pygame.
+**Slot Machine** is a Python terminal game that replicates the core mechanics of a real casino slot machine. From depositing your balance to spinning reels and calculating per-line payouts — every interaction is handled with clean, modular code and validated input.
 
-Each game is independently runnable, purposefully minimal, and built to demonstrate a distinct set of Python programming concepts. Whether you're here to play, learn, or fork — there's something for every level.
+Built as a deep-dive into **Python fundamentals through game logic** — randomization, control flow, data structures, and function composition all in one project.
 
-| Dimension | Detail |
+---
+
+## ✨ Features
+
+| Feature | Description |
 |---|---|
-| 🎯 **Purpose** | Portfolio showcase & Python fundamentals demonstration |
-| 🧱 **Architecture** | Standalone scripts — no cross-dependencies |
-| 🎮 **Game Types** | Real-time (Pygame) + Interactive CLI |
-| 👥 **Audience** | Beginners, learners, and Python enthusiasts |
+| 💰 **Balance System** | Deposit funds and track balance across every spin |
+| 🎯 **Multi-Line Betting** | Bet on 1 to 3 lines simultaneously |
+| 🔁 **Randomized Spins** | Column-based symbol generation with realistic distribution |
+| 🧮 **Per-Line Payouts** | Winnings calculated independently per winning line |
+| 🛑 **Bet Protection** | Prevents bets that exceed current balance |
+| ✅ **Input Validation** | Every input is sanitized — no crashes on bad input |
+| 🖥️ **Clean Terminal UI** | Readable grid display with instant feedback |
 
 ---
 
-## 🎮 Games at a Glance
+## 🎮 Game Flow
 
-| # | Game | Type | Engine | Core Concept |
-|---|---|---|---|---|
-| 1 | 🐍 Snake Game | Real-Time | Pygame | Game loop, collision, rendering |
-| 2 | ✊ Snake-Water-Gun | CLI | stdlib | Randomization, game logic |
-| 3 | ❓ Gaming Quiz | CLI | stdlib | Control flow, scoring |
-| 4 | 🔢 Number Guessing | CLI | stdlib | Validation, binary search intuition |
-| 5 | 🗺️ Adventure Game | CLI | stdlib | Branching narratives, conditionals |
+```
+┌─────────────────────────────────────────┐
+│           🎰 SLOT MACHINE               │
+├─────────────────────────────────────────┤
+│  1. Deposit initial balance             │
+│  2. Choose betting lines (1–3)          │
+│  3. Set bet amount per line             │
+│  4. Spin the reels                      │
+│  5. Symbols generated per column        │
+│  6. Matching rows = winnings            │
+│  7. Balance updated — spin again or quit│
+└─────────────────────────────────────────┘
+```
 
 ---
 
-## 🔍 Project Breakdowns
+## 🎰 Symbols & Payout Rules
 
-### 🐍 Project 1 — Snake Game (Pygame)
+| Symbol | Frequency | Payout Multiplier | Rarity |
+|---|---|---|---|
+| **A** | Very Low | **5×** | 🟥 Rare |
+| **B** | Low | **4×** | 🟧 Uncommon |
+| **C** | Medium | **3×** | 🟨 Common |
+| **D** | High | **2×** | 🟩 Very Common |
 
-> *The classic — reimagined in Python with real-time rendering, collision detection, and smooth movement.*
+> Higher-value symbols appear less frequently — maintaining authentic casino-style balance and excitement.
 
+**Payout Formula:**
 ```
-┌──────────────────────────────────┐
-│  🟩 🟩 🟩 ●                     │
-│              🍎                  │
-│                                  │
-│         Score: 3                 │
-└──────────────────────────────────┘
+Winnings = Bet per line × Symbol Multiplier × Winning Lines
 ```
 
-**Features:**
-- Real-time snake movement with arrow key controls
-- Randomized food generation on a bounded grid
-- Live score display updated per food consumed
-- Game-over on wall collision or self-intersection
-- Instant replay / quit prompt on game end
+---
 
-**Tech:** `Python` · `Pygame`
+## 🛠 Tech Stack
+
+| Component | Detail |
+|---|---|
+| **Language** | Python 3.x |
+| **Modules** | `random` (stdlib — no installs needed) |
+| **Concepts** | Functions, Dictionaries, Lists, Randomization, Modular Design |
+
+---
+
+## 🚀 Getting Started
+
+**Prerequisites:** Python 3.x — [Download here](https://python.org/downloads)
 
 ```bash
-pip install pygame
-python snake_game.py
+# Clone the repository
+git clone https://github.com/loisekk/slot-machine-python.git
+cd slot-machine-python
+
+# Run the game
+python slot_machine.py
 ```
 
----
-
-### ✊ Project 2 — Snake–Water–Gun
-
-> *India's classic hand game — Snake beats Water, Water beats Gun, Gun beats Snake. You vs the machine.*
-
-**Features:**
-- Fully randomized computer choice each round
-- Win / Lose / Draw outcome detection
-- Lightweight — runs instantly with zero dependencies
-- Easily extensible to multi-round scoring
-
-**Tech:** `Python` · `random`
-
-```bash
-python snake_water_gun.py
-```
-
----
-
-### ❓ Project 3 — Interactive Gaming Quiz
-
-> *Test your gamer knowledge. Multiple choice, score tracking, and emoji-packed feedback.*
-
-**Features:**
-- Curated gaming-themed multiple choice questions
-- Per-question score accumulation
-- Immediate right/wrong feedback with personality
-- Final score summary with rating
-
-**Tech:** `Python`
-
-```bash
-python quiz_game.py
-```
-
----
-
-### 🔢 Project 4 — Number Guessing Game
-
-> *User-defined range. Hidden number. How many guesses will it take?*
-
-**Features:**
-- Player sets their own min/max range
-- Input validation — no crashes on bad entries
-- Guess counter tracked across the session
-- Higher / Lower hints to guide each guess
-
-**Tech:** `Python` · `random`
-
-```bash
-python number_guessing.py
-```
-
----
-
-### 🗺️ Project 5 — Choose Your Own Adventure
-
-> *Marvel or DC? Every choice splits the story. No two playthroughs are alike.*
-
-**Features:**
-- Fully branching narrative — choices have real consequences
-- Multiple distinct endings based on decisions
-- Fun, creative storytelling with conditionals as the engine
-- Zero dependencies — pure Python storytelling
-
-**Tech:** `Python`
-
-```bash
-python adventure_game.py
-```
+No dependencies. No setup. Just run and play.
 
 ---
 
 ## 📂 Project Structure
 
 ```
-python-mini-games/
+slot-machine-python/
 │
-├── snake_game.py          # Real-time Pygame snake game
-├── snake_water_gun.py     # CLI hand game vs computer
-├── quiz_game.py           # Gamer-themed quiz with scoring
-├── number_guessing.py     # Range-based number guessing
-├── adventure_game.py      # Branching Marvel vs DC adventure
-│
-└── README.md              # You are here
+├── slot_machine.py    # Core game logic — all mechanics in one clean file
+└── README.md          # Project documentation
 ```
 
 ---
 
-## ⚡ Quick Start
+## 🧠 Implementation Highlights
 
-```bash
-# Clone the collection
-git clone https://github.com/loisekk/python-mini-games.git
-cd python-mini-games
-
-# For Pygame (Snake Game only)
-pip install pygame
-
-# Run any game directly
-python snake_game.py
-python snake_water_gun.py
-python quiz_game.py
-python number_guessing.py
-python adventure_game.py
-```
-
-> All CLI games run with **zero dependencies** beyond Python 3.x.
+- **Column-based generation** — symbols are drawn per column and removed after selection, preventing duplicates within a column and ensuring realistic spin behavior
+- **Weighted symbol distribution** — symbol frequency is controlled via count configuration, not hardcoded probability, making it easy to tune
+- **Per-line win detection** — each row is evaluated independently, so multi-line bets can yield multiple simultaneous wins
+- **Modular function design** — `deposit()`, `get_bet()`, `spin()`, `check_winnings()` are fully separated, making the codebase easy to extend or test
+- **Graceful exit** — player can quit at any time without errors; final balance is displayed on exit
 
 ---
 
-## 🧠 Skills Demonstrated
+## 📸 Screenshot
 
-```
-Python Mini Games — Concepts Covered
-│
-├── Game Loops & Real-Time Rendering     [Snake Game]
-├── Randomization & Probability Logic    [Snake-Water-Gun, Number Guess]
-├── Input Validation & Error Handling    [Number Guessing, All CLI games]
-├── Branching Logic & Decision Trees     [Adventure Game]
-├── Score Tracking & State Management   [Quiz, Snake Game]
-├── Pygame: Events, Surface, Clock      [Snake Game]
-└── Modular Design & Clean Code         [All Projects]
-```
+<div align="center">
+
+<img width="979" height="756" alt="Slot Machine Terminal Screenshot" src="https://github.com/user-attachments/assets/2eb96a6d-8c8f-4512-af13-e4e5ab1ee0b4" />
+
+*Terminal gameplay — deposit, spin, win.*
+
+</div>
 
 ---
 
-## 🚀 Roadmap
+## 📈 Future Enhancements
 
-| Enhancement | Target Project | Priority |
-|---|---|---|
-| 🔊 Sound effects & background music | Snake Game | High |
-| 🏆 Persistent leaderboard (SQLite) | Snake Game, Quiz | High |
-| 🖥️ GUI versions of CLI games | All CLI Projects | Medium |
-| 🎚️ Difficulty levels (Easy / Hard) | Number Guessing, Quiz | Medium |
-| 🌐 Multiplayer mode (socket-based) | Snake-Water-Gun | Low |
-| 🤖 AI opponent using minimax | Snake-Water-Gun | Low |
-| 🧪 Unit tests for game logic | All Projects | Medium |
+- [ ] 🎨 GUI version (Tkinter or PyGame) with animated reels
+- [ ] 🔊 Sound effects and win animations
+- [ ] 💾 Persistent balance using local file / SQLite
+- [ ] 🎚️ Difficulty modes (conservative / high-roller)
+- [ ] 📊 Session stats — spins, wins, losses, net profit
+- [ ] 🧪 Automated unit tests for game logic
 
 ---
 
@@ -244,7 +171,7 @@ Python Mini Games — Concepts Covered
 
 **Yash Brahmankar**
 
-*Python Developer · Game Enthusiast · Builder*
+*Aspiring Software Developer · Python Enthusiast · Builder*
 
 <br/>
 
@@ -254,7 +181,7 @@ Python Mini Games — Concepts Covered
 
 <br/>
 
-⭐ **If this collection taught you something or made you smile — drop a star. It means a lot.**
+⭐ **If this project was useful or fun, drop a star — it genuinely helps!**
 
 </div>
 
@@ -262,8 +189,8 @@ Python Mini Games — Concepts Covered
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:0d1117&height=140&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:0d1117&height=120&section=footer" width="100%"/>
 
-*Built with creativity and Python by Yash Brahmankar*
+*Built with 🎰 and Python by Yash Brahmankar*
 
 </div>
