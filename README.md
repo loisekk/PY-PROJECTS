@@ -1,5 +1,8 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=240&section=header&text=Python%20Mini%20Games&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=A%20Collection%20of%20Interactive%20CLI%20%26%20Pygame%20Experiences&descAlignY=56&descAlign=50" width="100%"/>
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=240&section=header&text=Python%20Mini%20Games&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=A%20Collection%20of%20Interactive%20CLI%20and%20Pygame%20Experiences&descAlignY=56&descAlign=50" width="100%"/>
+
+<br/>
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Pygame](https://img.shields.io/badge/Pygame-2.x-00B140?style=for-the-badge&logo=python&logoColor=white)](https://pygame.org)
@@ -9,11 +12,6 @@
 [![Status](https://img.shields.io/badge/Status-Active-00FF88?style=for-the-badge)](.)
 
 <br/>
-
-```
-█▀▀ ▄▀█ █▀▄▀█ █▀▀   █▀▀ █▀█ █░░ █░░ █▀▀ █▀▀ ▀█▀ █ █▀█ █▄░█
-█▄█ █▀█ █░▀░█ ██▄   █▄▄ █▄█ █▄▄ █▄▄ ██▄ █▄▄ ░█░ █ █▄█ █░▀█
-```
 
 > *Five games. One repo. Infinite replayability.*
 > A showcase of Python game development spanning CLI adventures to real-time Pygame action.
@@ -29,11 +27,6 @@
 - [About the Collection](#-about-the-collection)
 - [Games at a Glance](#-games-at-a-glance)
 - [Project Breakdowns](#-project-breakdowns)
-  - [🐍 Snake Game](#-project-1--snake-game-pygame)
-  - [✊ Snake-Water-Gun](#-project-2--snakewatergun)
-  - [❓ Gaming Quiz](#-project-3--interactive-gaming-quiz)
-  - [🔢 Number Guessing](#-project-4--number-guessing-game)
-  - [🗺️ Choose Your Adventure](#-project-5--choose-your-own-adventure)
 - [Project Structure](#-project-structure)
 - [Quick Start](#-quick-start)
 - [Skills Demonstrated](#-skills-demonstrated)
@@ -70,8 +63,6 @@ Each game is independently runnable, purposefully minimal, and built to demonstr
 ---
 
 ## 🔍 Project Breakdowns
-
----
 
 ### 🐍 Project 1 — Snake Game (Pygame)
 
@@ -158,7 +149,7 @@ python number_guessing.py
 
 ### 🗺️ Project 5 — Choose Your Own Adventure
 
-> *Marvel 🦸 or DC 🦇? Every choice splits the story. No two playthroughs are alike.*
+> *Marvel or DC? Every choice splits the story. No two playthroughs are alike.*
 
 **Features:**
 - Fully branching narrative — choices have real consequences
@@ -179,11 +170,11 @@ python adventure_game.py
 ```
 python-mini-games/
 │
-├── snake_game.py          # 🐍 Real-time Pygame snake game
-├── snake_water_gun.py     # ✊ CLI hand game vs computer
-├── quiz_game.py           # ❓ Gamer-themed quiz with scoring
-├── number_guessing.py     # 🔢 Range-based number guessing
-├── adventure_game.py      # 🗺️ Branching Marvel vs DC adventure
+├── snake_game.py          # Real-time Pygame snake game
+├── snake_water_gun.py     # CLI hand game vs computer
+├── quiz_game.py           # Gamer-themed quiz with scoring
+├── number_guessing.py     # Range-based number guessing
+├── adventure_game.py      # Branching Marvel vs DC adventure
 │
 └── README.md              # You are here
 ```
@@ -217,13 +208,13 @@ python adventure_game.py
 ```
 Python Mini Games — Concepts Covered
 │
-├── 🔁 Game Loops & Real-Time Rendering     [Snake Game]
-├── 🎲 Randomization & Probability Logic    [Snake-Water-Gun, Number Guess]
-├── ✅ Input Validation & Error Handling    [Number Guessing, All CLI games]
-├── 🌿 Branching Logic & Decision Trees     [Adventure Game]
-├── 📊 Score Tracking & State Management   [Quiz, Snake Game]
-├── 🖥️ Pygame: Events, Surface, Clock      [Snake Game]
-└── 🧩 Modular Design & Clean Code         [All Projects]
+├── Game Loops & Real-Time Rendering     [Snake Game]
+├── Randomization & Probability Logic    [Snake-Water-Gun, Number Guess]
+├── Input Validation & Error Handling    [Number Guessing, All CLI games]
+├── Branching Logic & Decision Trees     [Adventure Game]
+├── Score Tracking & State Management   [Quiz, Snake Game]
+├── Pygame: Events, Surface, Clock      [Snake Game]
+└── Modular Design & Clean Code         [All Projects]
 ```
 
 ---
@@ -266,8 +257,8 @@ Python Mini Games — Concepts Covered
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,8,25,30&height=140&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:0d1117&height=140&section=footer" width="100%"/>
 
-*Built with 🎮 creativity and 🐍 Python by Yash Brahmankar*
+*Built with creativity and Python by Yash Brahmankar*
 
 </div>
