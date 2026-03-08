@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=240&section=header&text=Python%20Mini%20Games&fontSize=52&fontColor=FF4500&fontAlignY=36&desc=A%20Collection%20of%20Interactive%20CLI%20and%20Pygame%20Experiences&descAlignY=56&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=240&section=header&text=Python%20Mini%20Games&fontSize=52&fontColor=FFD700&fontAlignY=36&desc=A%20Collection%20of%20Interactive%20CLI%20and%20Pygame%20Experiences&descAlignY=56&descAlign=50" width="100%"/>
 
 <br/>
 
