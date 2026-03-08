@@ -1,5 +1,4 @@
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=240&section=header&text=Python%20Mini%20Games&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=A%20Collection%20of%20Interactive%20CLI%20%26%20Pygame%20Experiences&descAlignY=56&descAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1a2e,100:16213e&height=240&section=header&text=Python%20Mini%20Games&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=A%20Collection%20of%20Interactive%20CLI%20%26%20Pygame%20Experiences&descAlignY=56&descAlign=50" width="100%"/>
 
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
