@@ -20,7 +20,7 @@
 █▄█ █▀█ █░▀░█ ██▄   █▄▄ █▄█ █▄▄ █▄▄ ██▄ █▄▄ ░█░ █ █▄█ █░▀█
 </pre>
 </div>
-```
+
 
 > *Five games. One repo. Infinite replayability.*
 > A showcase of Python game development spanning CLI adventures to real-time Pygame action.
